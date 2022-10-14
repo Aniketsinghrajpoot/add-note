@@ -68,3 +68,7 @@ server.on('listening', onListening);
 server.on('request', (req, res) =>{
     debug(`${new Date() .toISOString()} request ${req.method} ${req.url}`);
 });
+
+app.listem(port, ()=>{
+    console.log(`listening to the port no at ${port}`);
+})
