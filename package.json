@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-      "start": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb node ./app.mjs",
-      "mongodb-server1": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb PORT=3001 node ./app.mjs",
-      "mongodb-server2": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb PORT=3002 node ./app.mjs"
+    "start": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb node ./app.mjs",
+    "mongodb-server1": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb PORT=3001 node ./app.mjs",
+    "mongodb-server2": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb PORT=3002 node ./app.mjs"
   },
   "dependencies": {
     "bootstrap": "4.5.x",
     "capture-console": "^1.0.1",
     "cookie-parser": "~1.4.4",
+    "cross-env": "^7.0.3",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-promise-router": "^4.1.1",
