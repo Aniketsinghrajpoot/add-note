@@ -1,0 +1,34 @@
+{
+  "name": "fibonacci",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+      "start": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb node ./app.mjs",
+      "mongodb-server1": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb PORT=3001 node ./app.mjs",
+      "mongodb-server2": " cross-env DEBUG=notes:* MONGO_URL=mongodb://localhost/ MONGO_DBNAME=fibonacci NOTES_MODEL=mongodb PORT=3002 node ./app.mjs"
+  },
+  "dependencies": {
+    "bootstrap": "4.5.x",
+    "capture-console": "^1.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-promise-router": "^4.1.1",
+    "feather-icons": "4.25.x",
+    "fs-extra": "^10.1.0",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "jquery": "3.5.x",
+    "js-yaml": "3.13.x",
+    "level": "^6.0.1",
+    "mongodb": "^3.7.3",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "popper.js": "^1.16.1",
+    "rotating-file-stream": "^3.0.4",
+    "sequelize": "^6.21.6",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^5.1.0",
+    "twbs": "^0.0.6"
+  }
+}
